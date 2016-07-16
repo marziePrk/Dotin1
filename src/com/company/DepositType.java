@@ -1,15 +1,18 @@
 package com.company;
 
-public class DepositType {
-    int interestRate;
+public abstract class DepositType {
 
-    public int getInterestRate() throws Exception {
-//        Object object = Class.forName("com.company." + depositType).newInstance();
+    public abstract int getInterestRate();
+
+    //public void setInterestRate(int interestRate){this.interestRate=interestRate;
+
+
+    //public abstract int getInterestRate();
+    //        Object object = Class.forName("com.company." + depositType).newInstance();
 //        Method method = object.getClass().getDeclaredMethod("getInterestRate");
 //        interestRate = (Integer) method.invoke(object);
 //        return interestRate;
-        return 0;
-    }
+
   /*  public  int getInterestRate(String depositBalance){
         if (depositBalance.equals("ShortTerm")){
             ShortTerm shortTerm = new ShortTerm();
@@ -24,5 +27,5 @@ public class DepositType {
         return interestRate;
     }
 */
-}
 
+}
